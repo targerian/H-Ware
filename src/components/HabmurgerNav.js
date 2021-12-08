@@ -10,7 +10,7 @@ const HabmurgerNav = ({ open, setOpen }) => {
       <div className='dropdown-container'>
         <div className='drop-down-logo' onClick={() => setOpen(!open)}>
           <GiHamburgerMenu fontSize='30' />
-          <p className='logo-txt'>H-SOFTWARE</p>
+          <p className='logo-txt'>H-WARE</p>
         </div>
         <div
           className={`dropdown ${

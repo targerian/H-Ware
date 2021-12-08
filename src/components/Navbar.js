@@ -7,7 +7,7 @@ const Navbar = () => {
   const navLinks = ["Home", "About", "Testimonials", "Contacts"];
   return (
     <div className='navbar-container'>
-      <div className='logo'>H-SOFTWARE</div>
+      <div className='logo'>H-WARE</div>
       <div className='nav-links-container'>
         {navLinks.map((link) => (
           <div className='nav-link'>
