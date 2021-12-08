@@ -1,0 +1,82 @@
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2vh;
+  justify-content: space-between;
+  /* z-index: -1; */
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vh;
+  z-index: 1;
+}
+.header1 {
+  font-size: 5.5rem;
+  color: var(--black);
+  font-weight: 300;
+}
+.header1::after {
+  content: "WEB Services";
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 90xp;
+  display: block;
+}
+.header-img {
+  height: 100vh;
+  position: absolute;
+  right: 10vw;
+  /* z-index: 1; */
+}
+.header-describtion {
+  font-size: 1rem;
+  color: var(--black);
+  max-width: 400px;
+  line-height: 23px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.header-btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+@media screen and (max-width: 900px) {
+  .hero-container {
+    padding: 0 3vw;
+  }
+  .header-img {
+    opacity: 0.3;
+    max-height: 70vh;
+    height: auto;
+    transform: translateX(6%);
+    transition: transform ease in 3s;
+    /* z-index: 1; */
+  }
+  .hero-text {
+    margin-top: 7vh;
+    width: 100%;
+    align-items: center;
+    z-index: 2;
+  }
+  .hero-img {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .header1 {
+    text-align: center;
+    font-size: 4.5rem;
+  }
+  .header-describtion {
+    text-align: center;
+  }
+  .header-btn-container {
+    flex-direction: column;
+    min-width: 70vw;
+    justify-content: center;
+    align-items: center;
+  }
+}

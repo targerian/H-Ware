@@ -1,0 +1,11 @@
+.logo-container {
+  padding: 0 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 5vw 0;
+  width: 100%;
+  min-height: 150px !important ;
+  background-color: var(--secondary-color);
+}

@@ -1,0 +1,137 @@
+.services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services-title {
+  color: var(--black);
+  font-weight: 300;
+  font-size: 5rem;
+  margin-bottom: 5vh;
+}
+.services-title::after {
+  content: " Services";
+  font-weight: 400;
+  color: var(--main-color);
+  margin-left: 0.5vw;
+}
+.services-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 13vh;
+}
+.top-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 30vw;
+  background-color: #404040;
+  border-top-left-radius: 15vw;
+  overflow: hidden;
+}
+.top-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 30vw;
+  background-color: #404040;
+  border-top-right-radius: 15vw;
+  position: relative;
+  top: 7vh;
+  overflow: hidden;
+}
+.bottom-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 30vw;
+  background-color: #404040;
+  border-bottom-left-radius: 15vw;
+  overflow: hidden;
+}
+.bottom-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 30vw;
+  background-color: #404040;
+  border-bottom-right-radius: 15vw;
+  position: relative;
+  top: 7vh;
+  overflow: hidden;
+}
+.services-img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity ease-out 0.3s, transform ease-out 2s;
+  transform: scale(1);
+}
+/* .services-img:hover {
+  opacity: 0.3;
+  transform: scale(1.3);
+  transition: opacity ease-out 0.3s, transform ease-out 2s;
+} */
+.top-right:hover .services-img,
+.top-left:hover .services-img,
+.bottom-right:hover .services-img,
+.bottom-left:hover .services-img {
+  opacity: 0.3;
+  transform: scale(1.3);
+  transition: opacity ease-out 0.3s, transform ease-out 2s;
+}
+.card-title {
+  font-size: 1.8rem;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  font-weight: 300;
+}
+.card-stars {
+  position: absolute;
+  top: 60%;
+}
+@media screen and (max-width: 900px) {
+  .services-container {
+    padding: 0 3vw;
+  }
+  .card-stars {
+    top: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-stars {
+    top: 70%;
+    transform: scale(0.7);
+  }
+  .top-right,
+  .top-left,
+  .bottom-right,
+  .bottom-left {
+    width: 40vw;
+    border-radius: 10px;
+    top: 0;
+    transition: all ease-in 0.25s;
+  }
+  .services-title {
+    font-size: 3rem;
+  }
+  .card-title {
+    font-size: 1.2rem;
+  }
+}
