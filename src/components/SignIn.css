@@ -1,0 +1,45 @@
+.sign-in-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 5vw;
+  min-width: 50vw;
+}
+.sign-in-title {
+  font-size: 2rem;
+  color: var(--main-color);
+  align-self: flex-start;
+  margin-bottom: 4vh;
+}
+.f-l-name {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+.radio-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2vw;
+}
+.radio-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.radio {
+  opacity: 0.8;
+}
+.radio:active {
+  opacity: 1;
+}
+@media screen and (max-width: 600px) {
+  .f-l-name {
+    flex-direction: column;
+    gap: 0;
+  }
+  .sign-in-container {
+    min-width: 80%;
+  }
+}

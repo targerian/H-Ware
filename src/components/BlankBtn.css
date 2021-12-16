@@ -1,13 +1,13 @@
 .blank-btn-container {
   display: flex;
-  font-weight: 400;
+  font-weight: 300;
   justify-content: center;
   align-items: center;
   border-radius: 3px;
-  padding: 1.5vh 2vw;
-  font-size: 1.4rem;
-  font-weight: 300;
+  padding: 2vh 3vw;
+  font-size: 1.2rem;
   border: 1px solid var(--main-color);
+  font-family: "Roboto", sans-serif !important;
 }
 
 .white {
@@ -26,6 +26,16 @@
   color: var(--main-color);
   background-color: #fff;
   border: 1px solid var(--main-color);
+}
+.black {
+  color: #fff;
+  background-color: var(--black);
+  border: 1px solid #fff;
+  font-weight: 300;
+}
+.black:hover {
+  color: var(--black);
+  background-color: #fff;
 }
 @media screen and (max-width: 900px) {
   .blank-btn-container {

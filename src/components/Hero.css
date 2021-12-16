@@ -3,6 +3,7 @@
   flex-direction: row;
   padding-top: 2vh;
   justify-content: space-between;
+  padding: 0 9.883vw;
   /* z-index: -1; */
 }
 .hero-text {

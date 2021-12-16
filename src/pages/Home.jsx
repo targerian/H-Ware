@@ -1,5 +1,7 @@
 import React from "react";
+import FAQS from "../components/FAQS";
 import Features from "../components/Features";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Logo from "../components/Logo";
 import Services from "../components/Services";
@@ -17,6 +19,8 @@ const Home = ({ setOpen }) => {
       <Services />
       <Features />
       <Testimonials />
+      <FAQS />
+      <Footer />
     </div>
   );
 };

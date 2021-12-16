@@ -9,7 +9,7 @@ const Features = () => {
     { name: "Collaborations", to: "/" },
   ];
   return (
-    <div className='features-container'>
+    <div className='features-container' id='features'>
       <h1 class='featurs-text'>Our</h1>
       <span className='features-describtion'>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat

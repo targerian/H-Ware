@@ -1,0 +1,48 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 4vh 0;
+  position: relative;
+  width: 100%;
+}
+
+input {
+  border: 1px solid rgba(37, 164, 173, 0.2);
+  min-height: 40px;
+  padding: 0.5rem 0.5rem;
+}
+.input-container label {
+  order: -1;
+}
+.label {
+  position: absolute;
+  top: 25%;
+  left: 0.5vw;
+  transition: all ease-out 0.2s;
+  color: grey;
+  opacity: 0.7;
+}
+input:focus + .label,
+input:active + label {
+  top: -5vh;
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+  transition: all ease-out 0.2s;
+  color: var(--black);
+}
+input:focus {
+  outline: 1px solid grey;
+}
+.password {
+  letter-spacing: 0.3em;
+}
+@media screen and (max-width: 600px) {
+  .input-container {
+    margin: 2.5vh 0;
+  }
+  input:focus + .label,
+  input:active + label {
+    top: -3vh;
+  }
+}

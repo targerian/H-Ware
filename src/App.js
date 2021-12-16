@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import { useWindowSize } from "./hooks/useWindowSize";
 import HabmurgerNav from "./components/HabmurgerNav";
 import { useState } from "react";
+import Sign from "./pages/Sign";
 
 function App() {
   const size = useWindowSize();
@@ -18,6 +19,7 @@ function App() {
         <HabmurgerNav setOpen={setOpen} open={open} />
       )}
       <Routes>
+        <Route path='/sign' element={<Sign />} />
         <Route path='/' element={<Home setOpen={setOpen} />} />
       </Routes>
     </div>

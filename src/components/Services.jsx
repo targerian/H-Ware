@@ -8,7 +8,7 @@ import BlankBtn from "./BlankBtn";
 
 const Services = () => {
   return (
-    <div className='services-container'>
+    <div className='services-container' id='services'>
       <p className='services-title'>Best</p>
       <div className='services-card-container'>
         {/* <Services4 sytle={{ backgroundColor: "red" }} /> */}

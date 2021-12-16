@@ -12,9 +12,10 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 .container {
-  padding: 5vh 9.883vw;
+  padding: 5vh 0;
 }
 a,
 a:visited {

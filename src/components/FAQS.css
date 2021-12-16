@@ -1,0 +1,15 @@
+.faqs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw 0;
+  background-color: var(--secondary-color);
+}
+.faqs-text {
+  margin: 0 !important;
+  font-size: 5rem;
+  color: var(--main-color);
+  font-weight: 400;
+  margin-bottom: 5vh !important;
+}

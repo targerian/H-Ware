@@ -46,7 +46,7 @@ const Testimonials = () => {
     setPersonData(Data[no]);
   };
   return (
-    <div className='test-container'>
+    <div className='test-container' id='test'>
       <h1 class='test-text'>Clients</h1>
       <p className='test-describtion'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nihil

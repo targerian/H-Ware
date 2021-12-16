@@ -1,16 +1,27 @@
 import React, { useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import { Link } from "react-scroll";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 import "./HabmurgerNav.css";
 const HabmurgerNav = ({ open, setOpen }) => {
-  const navLinks = ["Home", "About", "Testimonials", "Contacts"];
+  const navLinks = [
+    { name: "Home", to: "hero" },
+    { name: "Feaures", to: "features" },
+    { name: "Services", to: "services" },
+    { name: "Our Clients", to: "test" },
+    { name: "Q & A", to: "q&a" },
+    { name: "Contacts", to: "footer" },
+  ];
 
   return (
     <>
       <div className='dropdown-container'>
         <div className='drop-down-logo' onClick={() => setOpen(!open)}>
           <GiHamburgerMenu fontSize='30' />
-          <p className='logo-txt'>H-WARE</p>
+          <RouterLink to='./'>
+            <p className='logo-txt'>H-WARE</p>
+          </RouterLink>
         </div>
         <div
           className={`dropdown ${
@@ -19,8 +30,8 @@ const HabmurgerNav = ({ open, setOpen }) => {
           onClick={() => setOpen(false)}
         >
           {navLinks.map((element) => (
-            <Link to='/'>
-              <div className='dropdown-btn'>{element}</div>
+            <Link to={element.to} smooth='true' onClick={() => setOpen(false)}>
+              <div className='dropdown-btn'>{element.name}</div>
             </Link>
           ))}
         </div>
